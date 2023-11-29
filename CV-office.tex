@@ -1,22 +1,32 @@
 \documentclass[11pt, a4paper]{moderncv}
+
 \moderncvstyle{classic}
 \moderncvcolor{blue}
 
 \usepackage[scale=0.75]{geometry}
 
-\firstname{Piotr}
-\familyname{Próchnicki}
-\title{Curriculum Vitae}
-\address{}{Kraków, Polska}
-\phone{}
-\email{}
+\renewcommand{\rmdefault}{phv} % Arial
+\renewcommand{\sfdefault}{phv} % Arial
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % Wyczyść bieżące ustawienia stopki i nagłówka
+
+% Ustawienia stopki
+\rfoot{Twoja stopka tutaj}
+
+\renewcommand{\footrulewidth}{0.4pt} % Grubość linii oddzielającej stopkę od reszty strony
+
+
+\firstname{\scalebox{0.75}{Piotr}}
+\familyname{\scalebox{0.75}{Próchnicki}}
+\phone{694364356}
+\email{piotr.prochnicki@gmail.com}
 \photo[64pt][0.4pt]{my-photo.jpg} % Add your photo here
 
 \begin{document}
 \makecvtitle
-
-\section{Podsumowanie}
- Jestem zorientowany na szczegóły i skuteczny w organizacji zadań. Biegła obsługa programów biurowych tj.MS Office i umiejętność komunikacji w zespole. Do tej pory pracowałem, jako m.in.Inżynier DevOps z doświadczeniem w programowaniu, technologiach informatycznych i pracy biurowej.
 
 \section{Doświadczenie}
 \cventry{Maj 2023 -- Wrzesień 2023}{Inżynier DevOps}{HXS Sp. z o.o. Sp.k.}{staż}{}{
@@ -61,14 +71,14 @@
   \end{itemize}
 }
 
-\textbf{}Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).
-
 \cventry{Marzec 2017 -- Kwiecień 2017}{Informatyk konserwator sieci i systemów komputerowych}{COGITO, Stowarzyszenie Na Rzecz Rozwoju Psychiatrii i Opieki Środowiskowej}{staż}{}{
   \begin{itemize}
     \item Opieka and infrastrukturą IT w ośrodkach
     \item Rozwiązywanie lokalnych problemów z siecią
   \end{itemize}
 }
+
+\fancyfoot[LE,RO]{Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).}
 
 \cventry{Październik 2016 -- Grudzień 2016}{technik prac biurowych}{Wydział Informatyki, Urząd Miasta Krakowa}{staż}{}{
   \begin{itemize}
@@ -113,7 +123,12 @@
 \cvitem{języki}{Angielski (B2), Francuski (A2)}
 \cvitem{diversity}{umiarkowany}
 
-\textbf{}Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).
+\section{Podsumowanie}
+ Jestem zorientowany na szczegóły i skuteczny w organizacji zadań. Biegła obsługa programów biurowych tj.MS Office 
+ i umiejętność komunikacji w zespole. Do tej pory pracowałem jako, między innymi, Inżynier DevOps z doświadczeniem 
+ w programowaniu, technologiach informatycznych i pracy biurowej.
+
+
 
 \end{document}
 
